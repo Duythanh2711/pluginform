@@ -1,0 +1,95 @@
+.hte_form {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hte_form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.hte_form input,
+.hte_form select,
+.hte_form textarea,
+.hte_form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #2c2c2c;
+    background: #fff;
+}
+
+.hte_form input[type="checkbox"] {
+    width: 16px;
+    margin-top: 5px;
+    height: 16px;
+}
+
+.hte_form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hte_form button:hover {
+    background-color: #0056b3;
+}
+
+.hte_form .form-group {
+    margin-bottom: 10px;
+}
+
+.hte_form .form-note {
+    width: 300%;
+    padding: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #2c2c2c;
+    background-color: #efefef;
+}
+
+.check-box-label {
+    display: flex !important;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.custom-dropdown {
+    max-height: 400px;
+    overflow-y: auto;
+    display: block;
+}
+
+.custom-quantity-group {
+    display: flex;
+}
+
+.btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-width: 120px;
+}
+
+.btn-primary .fa-spinner {
+    font-size: 18px;
+    margin-left: 10px;
+}
