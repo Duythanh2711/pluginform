@@ -1,0 +1,1 @@
+<!-- # File để dọn dẹp khi gỡ cài đặt plugin -->

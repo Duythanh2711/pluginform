@@ -25,27 +25,7 @@ function hte_form_create_students_table() {
     require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
     dbDelta($sql);
 
-    // thêm 20 bản ghi mẫu
-    $existing_records = $wpdb->get_var("SELECT COUNT(*) FROM $table_name");
-    if ($existing_records == 0) {
-        $sample_data = [];
-        for ($i = 1; $i <= 20; $i++) {
-            $sample_data[] = $wpdb->prepare(
-                "(%s, %s, %s, %s, %s, %s, %s, %s)",
-                "32202056$i",
-                "Nguyễn Văn A $i",
-                "1993-02-0" . ($i % 10 + 1),
-                "student$i@example.com",
-                "2020-2022",
-                "Luật",
-                "Luật Kinh tế",
-                "Đào tạo từ xa qua mạng"
-            );
-        }
-
-        $values = implode(',', $sample_data);
-        $wpdb->query("INSERT INTO $table_name (msv, full_name, ngay_sinh, email, khoa_hoc, khoa, nganh_hoc, he_dao_tao) VALUES $values");
-    }
+    
 }
 
 // Kích hoạt hàm khi plugin được kích hoạt
